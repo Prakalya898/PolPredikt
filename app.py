@@ -245,7 +245,7 @@ def visualization_page():
         # Customize bar colors
         colors = ['#800080', '#9370db', '#966fd6', '#b19cd9','#dcd0ff','#d8bfd8','#bf94e4','#d473d4']  # Replace with your desired colors
         ax = datar.plot(kind='bar', color=colors)
-        ax.bar_label(ax.containers[0])
+        ax.bar_label(ax.containers[0],fontsize=8)
 
         # Customize other plot properties if needed
         ax.set_xlabel('Party')
