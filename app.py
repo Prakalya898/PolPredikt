@@ -232,7 +232,7 @@ def visualization_page():
     voting_df = st.session_state.voting_df
 
     # Visualization code...
-    plt.figure(figsize=(2, 1))
+    plt.figure(figsize=(8, 6))
     plt.tight_layout()
 
     if voting_df is not None:
@@ -245,7 +245,7 @@ def visualization_page():
         # Customize bar colors
         colors = ['#800080', '#9370db', '#966fd6', '#b19cd9','#dcd0ff','#d8bfd8','#bf94e4','#d473d4']  # Replace with your desired colors
         ax = datar.plot(kind='bar', color=colors)
-        ax.bar_label(ax.containers[0],fontsize=4)
+        ax.bar_label(ax.containers[0])
 
         # Customize other plot properties if needed
         ax.set_xlabel('Party')
