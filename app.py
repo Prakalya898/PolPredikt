@@ -232,7 +232,7 @@ def visualization_page():
     voting_df = st.session_state.voting_df
 
     # Visualization code...
-    plt.figure(figsize=(10, 6))
+    plt.figure(figsize=(5, 4))
     plt.tight_layout()
 
     if voting_df is not None:
