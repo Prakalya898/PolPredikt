@@ -75,7 +75,8 @@ def login_page():
 
 # File upload page
 def upload_file_page():
-    st.title("Upload File Page")
+    st.title("POLLPREDICT")
+    st.subheader("UPLOAD")
     
     # Upload file through Streamlit
     uploaded_file = st.file_uploader("Choose a file")
